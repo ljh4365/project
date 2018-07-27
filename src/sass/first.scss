@@ -304,11 +304,51 @@ a{
             border: 10px solid white;
             float: left;
         } 
+    }   
+}
+
+.goods{
+    width: 1349px;
+    height: 960px;
+//  background: pink;
+    .title{
+        width: 1229px;
+        height: 140px;
+        margin: 0 60px;
+        h2{
+            font-size:44px;
+            line-height: 160px;
+            height: 140px;
+            float: left;
+        }
+        ul{
+            float:right;
+            li{
+                float: left;
+                line-height: 16px;
+                height: 140px;
+                a{
+                    display: block;
+                    margin-top: 90px;
+                    padding: 0 28px;
+                    font-size: 14px;
+                    color: #a4a3a3;
+                    border-left: 1px solid #a4afc6;
+                    border-right: 1px solid #ffd2ba;
+                }
+                a:nth-child(1){
+                    border-left: none;                   
+                }
+                a:nth-child(6){
+                    display: block;
+                    border-right: none;
+                    padding-right: 0;                   
+                }
+            }
+        }
     }
     
 }
-
-
 
 
 

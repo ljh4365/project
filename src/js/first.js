@@ -32,9 +32,10 @@ Slider.prototype.slide = function(){
 	}
 	this.ullis[this.indexA].style.display = "block";
 	this.ollis[this.indexA].style.background = "white";
-	startMove(this.ollis[this.indexA], {
-                    width:54,                   
-             });	
+	this.ollis[this.indexA].style.width = "54px";
+//	startMove(this.ollis[this.indexA], {
+//                  width:54,                   
+//           });	
 }
 
 Slider.prototype.addEvent = function(){
@@ -57,6 +58,9 @@ Slider.prototype.addEvent = function(){
 			this.indexA = i;
 			this.slide();
 		}.bind(this);
+//		this.ollis[i].onmouseout= function(){
+//			this.style.width = '8px';
+//		}
 	}
 }
 Slider.prototype.autoPlay = function(){
@@ -144,10 +148,16 @@ $(function(){
 			$lis.eq(0).removeClass().addClass("show");
 			$tab.hover(function(){
 				var $index = $(this).index();//获取下标
-				$(this).animate({opacity:1},500);					
+//				$(this).animate({opacity:1},500);
 				$lis.eq($index).removeClass().addClass("show").siblings().removeClass().addClass("hide");
+				$(this).find('img').attr("src","first_img/img"+($index +1) +"_b.png");
+				$(this).find('dd').css("color","#333");
+				
 			},function(){
-				$(this).animate({opacity:0.5},500)
+//				$(this).animate({opacity:0.5},500);
+				var $index = $(this).index();	
+				$(this).find('img').attr("src","first_img/img"+($index +1) +"_s.png");
+				$(this).find('dd').css("color","#888");
 			})
 		}
 		fn("#list_t dl","#list_b .ul_1");
@@ -155,9 +165,19 @@ $(function(){
 	})
 
 //轮播图下的滑动
-var $lis = $('.boxborder ul li');
-$lis.hover(function(){
+var $ali = $('.boxborder ul li');
+$ali.hover(function(){	
 	var $index = $(this).index();
+	$ali.eq($index).fadeToggle(300);
+	$ali.eq($index).css({"background-image":"url(first_img/phone.jpg)",
+	"border-color":"#ebebeb"});
+	$ali.eq($index).find('img').attr("src","first_img/img2.png");
+	$ali.eq($index).fadeToggle(500);
+	
+},function(){
+	var $index = $(this).index();
+	$ali.eq($index).css({"background":"white","border-color":"white"});
+	$ali.eq($index).find('img').attr("src","first_img/imgs2.png");
 })
 
 
