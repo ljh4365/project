@@ -12,14 +12,14 @@ a {
 #top {
   width: 1349px; }
 
-/*导航*/
+/*******************************导航*************************/
 #top_list {
   position: absolute;
   /*left: 60px;*/
   width: 1349px;
   z-index: 10; }
 
-/*导航logo*/
+/******************************导航logo************************/
 #top_list #pic {
   width: 60px;
   height: 180px;
@@ -27,7 +27,7 @@ a {
   float: left;
   /*background: url(../first_img/icons_1.png) no-repeat -346px -8px;*/ }
 
-/*导航列表*/
+/*******************************导航列表*******************************/
 #top_list ul {
   float: left; }
 
@@ -47,7 +47,7 @@ a {
   height: 10px;
   background: url(../first_img/icons_2.png) no-repeat -214px -44px; }
 
-/*导航搜索框*/
+/*******************************导航搜索框**********************/
 #top_list span:nth-child(3) {
   width: 250px;
   height: 40px;
@@ -75,13 +75,13 @@ a {
   right: 0;
   top: 2px; }
 
-/*导航小人*/
+/*******************************导航小人**********************/
 #top_list img:nth-child(4) {
   float: left;
   margin-left: 30px;
   margin-top: 18px; }
 
-/*导航后图标*/
+/*******************************导航后图标************************/
 #top_list span:nth-child(5) {
   width: 24px;
   height: 22px;
@@ -98,7 +98,7 @@ a {
   margin-top: 15px;
   background: url(../first_img/icons_2.png) no-repeat -184px -200px; }
 
-/*导航第一个二级菜单*/
+/*********************导航第一个二级菜单************************/
 #top_list #list_1 {
   width: 1349px;
   height: 450px;
@@ -109,7 +109,7 @@ a {
   color: #898989;
   display: none; }
 
-/*二级菜单图标*/
+/************************二级菜单图标*********************/
 #top_list #list_t {
   width: 1279px;
   height: 134px;
@@ -121,7 +121,7 @@ a {
   margin: 10px 44px 0;
   opacity: 0.5; }
 
-/*二级菜单信息*/
+/**************************二级菜单信息**********************/
 #list_b {
   width: 1225px;
   padding-left: 110px; }
@@ -160,7 +160,7 @@ a {
   color: #3399ff;
   line-height: 40px; }
 
-/*导航第二个二级菜单*/
+/*******************************导航第二个二级菜单*************/
 #top_list #list_2 {
   width: 1349px;
   height: 450px;
@@ -171,7 +171,7 @@ a {
   color: #898989;
   display: none; }
 
-/*二级菜单图标*/
+/*********************二级菜单图标*********************/
 #top_list #list_t2 {
   width: 1279px;
   height: 134px;
@@ -183,7 +183,7 @@ a {
   margin: 10px 160px 0;
   opacity: 0.5; }
 
-/*二级菜单信息*/
+/*********************二级菜单信息*********************/
 #list_b2 {
   width: 1225px;
   padding-left: 150px;
@@ -223,7 +223,7 @@ a {
   color: #3399ff;
   line-height: 40px; }
 
-/*轮播图*/
+/*********************轮播图*********************/
 .container {
   width: 1349px;
   height: 600px;
@@ -393,3 +393,39 @@ a {
     right: 2px; }
     .slide span:nth-child(3) img {
       left: 30px; }
+
+.top {
+  width: 1069px;
+  height: 380px;
+  background: #272727;
+  padding: 0 120px 0 160px; }
+  .top ul {
+    width: 840px;
+    height: 380px;
+    float: left; }
+    .top ul li {
+      width: 210px;
+      float: left; }
+      .top ul li h3 {
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 36px;
+        color: #ccc; }
+      .top ul li ul {
+        width: 210px;
+        height: 380px; }
+        .top ul li ul li a {
+          display: block;
+          font-size: 14px;
+          line-height: 24px;
+          color: #ccc; }
+  .top div {
+    width: 220px;
+    height: 380px;
+    float: right;
+    background: pink; }
+    .top div h3 {
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 36px;
+      color: #ccc; }

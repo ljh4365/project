@@ -201,7 +201,7 @@ function fn1(ele1,ele2){
 //	var $Imgs = $(".oBig li");
 //	$Imgs.hover(function(){
 ////		alert(1);
-//		$(this).find('img').animate({top:"-10px"},1000);
+//		$(this).find('img').animate({"margin-top":-10},1000);
 //	})
 //})
 
@@ -237,10 +237,11 @@ $(function(){
 	})
 	btn_R.click(function(){
 		clearInterval(timer);
+		
 		oUl.style.left = oUl.offsetLeft + 269 + "px";
-		if(oUl.offsetLeft <= -oUl.offsetWidth/2){
-				oUl.style.left = 0;
-			}
+		if(oUl.offsetLeft >= 0){
+			oUl.style.left = -oUl.offsetWidth/2 +"px";
+		}
 	})	
 })
 
