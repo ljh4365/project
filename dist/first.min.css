@@ -356,3 +356,40 @@ a {
             margin-bottom: 0; }
           .goods .goodslist .oBig ul li li:nth-child(4) {
             margin-bottom: 0; }
+
+.slide {
+  width: 1345px;
+  height: 526px;
+  background: url(../first_img/bj.jpg) no-repeat -280px -50px;
+  padding: 0 2px;
+  position: relative; }
+  .slide div {
+    width: 1345px;
+    height: 244px;
+    position: absolute;
+    bottom: 60px;
+    overflow: hidden; }
+    .slide div ul {
+      position: absolute; }
+      .slide div ul li {
+        float: left; }
+        .slide div ul li img {
+          width: 269px;
+          height: 244px; }
+  .slide span {
+    width: 270px;
+    height: 244px;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    bottom: 60px;
+    z-index: 2; }
+    .slide span img {
+      display: block;
+      position: absolute;
+      right: 30px;
+      top: 100px; }
+  .slide span:nth-child(3) {
+    right: 2px; }
+    .slide span:nth-child(3) img {
+      left: 30px; }

@@ -399,36 +399,54 @@ a{
 }
 
 //无缝连接图
-//.slide{
-//  width: 1345px;
-//  height: 526px;
-//  background: url(../first_img/bj.jpg) no-repeat -280px -50px;
-//  padding: 0 2px;
-//  position: relative;
-// 
-// div{
-//     width: 1345px;
-//      height: 244px;
-//      position: absolute;
-//      bottom: 60px;
-//      overflow: hidden;
-//      ul{
-//          width: 1345px;
-//          height: 244px;
-//          li{
-////              width: 269px;
-////              height: 244px;
-//              float: left;
-//              img{
-//                  width: 269px;
-//                  height: 244px;
-//              }
-//          }
-//      } 
-//  }
-//  
-//}
-//
+.slide{
+    width: 1345px;
+    height: 526px;
+    background: url(../first_img/bj.jpg) no-repeat -280px -50px;
+    padding: 0 2px;
+    position: relative;
+   
+   div{
+       width: 1345px;
+        height: 244px;
+        position: absolute;
+        bottom: 60px;
+        overflow: hidden;
+        ul{
+            position: absolute;
+            li{
+//              width: 269px;
+//              height: 244px;
+                float: left;
+                img{
+                    width: 269px;
+                    height: 244px;
+                }
+            }
+        } 
+    }
+    span{
+        width: 270px;
+        height: 244px;
+        background: black;
+        opacity: 0.5;
+        position: absolute;
+        bottom: 60px;
+        z-index: 2;
+        img{
+            display: block;
+            position: absolute;
+            right: 30px;
+            top:100px;
+        }
+    }  
+    span:nth-child(3){
+        right: 2px;
+        img{
+            left: 30px;
+        }
+    }  
+}
 
 
 

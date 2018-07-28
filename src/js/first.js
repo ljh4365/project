@@ -206,29 +206,43 @@ function fn1(ele1,ele2){
 //})
 
 //无缝连接图
-//$(function(){
-//	var oul = $(".slide ul");
-//	var oli = $(".slide ul li");
-//	var oUl = $(oul)[0];
-//	var olis = $(oli).get();
-//	
-////	alert(oUl);
+$(function(){
+	var oUl = $(".slide ul")[0];
+	var olis = $(".slide ul li").get();
+	var btn_L = $(".btn_L");
+	var btn_R = $(".btn_R");
+	
+//	alert(btn_L);
 //	alert(olis.length);
-//	
-//	oUl.innerHTML += oUl.innerHTML;
-////	oUl.style.width = olis.length * olis[0].offsetWidth + "px";
-//	alert(oUl.offsetWidth);
-//	setInterval(function(){
-//		startMove(oUl,{
-//			left : oUl.offsetLeft - olis[0].offsetWidth;
-//		},function(){
-//			if(oUl.offsetLeft <= -oUl.offsetWidth/2){
-//				oUl.style.left = 0;
-//			}
-//		})
-//	},2000)
-//	
-//})
+	var length = olis.length * olis[0].offsetWidth;
+//	alert(olis[0].offsetWidth);
+	oUl.innerHTML += oUl.innerHTML;
+	oUl.style.width = length + "px";
+//	alert(olis[0].offsetWidth);
+	var timer = setInterval(function(){
+		startMove(oUl,{			
+			left : oUl.offsetLeft - 269
+		},function(){
+			if(oUl.offsetLeft <= -oUl.offsetWidth/2){
+				oUl.style.left = 0;
+			}
+		})		
+	},3000)
+	btn_L.click(function(){
+		clearInterval(timer);
+		oUl.style.left = oUl.offsetLeft - 269 + "px";
+		if(oUl.offsetLeft <= -oUl.offsetWidth/2){
+				oUl.style.left = 0;
+			}
+	})
+	btn_R.click(function(){
+		clearInterval(timer);
+		oUl.style.left = oUl.offsetLeft + 269 + "px";
+		if(oUl.offsetLeft <= -oUl.offsetWidth/2){
+				oUl.style.left = 0;
+			}
+	})	
+})
 
 
 

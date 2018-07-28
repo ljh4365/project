@@ -35,7 +35,6 @@ function startMove(obj, json, func){ //func = complate
 				func.call(obj);
 			}
 		}
-
 	}, 30);
 }
 //获取当前样式
