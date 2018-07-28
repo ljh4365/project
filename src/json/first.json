@@ -1,0 +1,32 @@
+{
+	"list1": {
+		"left":"item_1.jpg",
+		"img":["item1.jpg","item2.jpg","item3.jpg","item4.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	},
+	"list2": {
+		"left":"item_2.jpg",
+		"img":["item5.jpg","item6.jpg","item7.jpg","item8.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	},
+	"list3": {
+		"left":"item_3.jpg",
+		"img":["item9.jpg","item10.jpg","item11.jpg","item12.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	},
+	"list4": {
+		"left":"item_4.jpg",
+		"img":["item1.jpg","item2.jpg","item3.jpg","item4.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	},
+	"list5": {
+		"left":"item_5.jpg",
+		"img":["item5.jpg","item6.jpg","item7.jpg","item8.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	},
+	"list6": {
+		"left":"item_6.jpg",
+		"img":["item9.jpg","item10.jpg","item11.jpg","item12.jpg"],
+		"price":["￥6199","￥4499","￥5199","￥4999"]
+	}
+}

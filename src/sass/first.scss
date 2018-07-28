@@ -310,7 +310,6 @@ a{
 .goods{
     width: 1349px;
     height: 960px;
-//  background: pink;
     .title{
         width: 1229px;
         height: 140px;
@@ -319,6 +318,8 @@ a{
             font-size:44px;
             line-height: 160px;
             height: 140px;
+            color: #434242;
+            font-weight: normal;
             float: left;
         }
         ul{
@@ -336,20 +337,98 @@ a{
                     border-left: 1px solid #a4afc6;
                     border-right: 1px solid #ffd2ba;
                 }
-                a:nth-child(1){
-                    border-left: none;                   
-                }
-                a:nth-child(6){
-                    display: block;
+            }
+            li:nth-child(1){
+               a{
+                  border-left: none;  
+               }   
+            }    
+            li:last-child{
+                a{
                     border-right: none;
-                    padding-right: 0;                   
-                }
+                    padding-right: 0; 
+                }                 
             }
         }
+    } 
+    //明星单品列表
+    .goodslist{
+        width: 1229px;
+        height: 790px;
+        margin: 0 60px;
+        .oBig{
+            width: 1229px;
+            height: 790px;
+            div{
+                float: left;
+                img{
+                    display: block;
+                    width:590px;
+                    height: 790px;
+                }
+            }
+            ul{
+                float: right;
+                width: 630px;
+                li{
+                    float:left;
+                    width: 300px;
+                    height: 387px;
+                    overflow: hidden;
+                    margin-left: 15px;
+                    margin-bottom: 15px;
+                    position: relative;
+                    span{
+                        position: absolute;
+                        left: 124px;
+                        top:135px;
+                        font-size: 16px;
+                        color: #a5a6a8;
+                        z-index: 2;
+                }
+                li:nth-child(3){
+                    margin-bottom: 0;
+                }
+                li:nth-child(4){
+                    margin-bottom: 0;
+                }
+            }
+        }       
     }
-    
+}
 }
 
+//无缝连接图
+//.slide{
+//  width: 1345px;
+//  height: 526px;
+//  background: url(../first_img/bj.jpg) no-repeat -280px -50px;
+//  padding: 0 2px;
+//  position: relative;
+// 
+// div{
+//     width: 1345px;
+//      height: 244px;
+//      position: absolute;
+//      bottom: 60px;
+//      overflow: hidden;
+//      ul{
+//          width: 1345px;
+//          height: 244px;
+//          li{
+////              width: 269px;
+////              height: 244px;
+//              float: left;
+//              img{
+//                  width: 269px;
+//                  height: 244px;
+//              }
+//          }
+//      } 
+//  }
+//  
+//}
+//
 
 
 

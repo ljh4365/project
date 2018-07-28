@@ -165,20 +165,72 @@ $(function(){
 	})
 
 //轮播图下的滑动
-var $ali = $('.boxborder ul li');
-$ali.hover(function(){	
-	var $index = $(this).index();
-	$ali.eq($index).fadeToggle(300);
-	$ali.eq($index).css({"background-image":"url(first_img/phone.jpg)",
-	"border-color":"#ebebeb"});
-	$ali.eq($index).find('img').attr("src","first_img/img2.png");
-	$ali.eq($index).fadeToggle(500);
-	
-},function(){
-	var $index = $(this).index();
-	$ali.eq($index).css({"background":"white","border-color":"white"});
-	$ali.eq($index).find('img').attr("src","first_img/imgs2.png");
+$(function(){
+	var $ali = $('.boxborder ul li');
+	$ali.hover(function(){	
+		var $index = $(this).index();
+		$ali.eq($index).fadeToggle(300);
+		$ali.eq($index).css({"background-image":"url(first_img/phone.jpg)",
+		"border-color":"#ebebeb"});
+		$ali.eq($index).find('img').attr("src","first_img/img2.png");
+		$ali.eq($index).fadeToggle(500);
+		
+	},function(){
+		var $index = $(this).index();
+		$ali.eq($index).css({"background":"white","border-color":"white"});
+		$ali.eq($index).find('img').attr("src","first_img/imgs2.png");
+	})
 })
+
+//明星单品
+function fn1(ele1,ele2){
+	var $tab = $(ele1);
+	var $lis = $(ele2);
+	$lis.eq(0).css("display","block");
+	$tab.hover(function(){
+		var $index = $(this).index();//获取下标
+		$(this).find('a').css("color","#434242");
+		$lis.eq($index).css("display","block").siblings().css("display","none");
+	},function(){
+		$(this).find('a').css("color","#a4a3a3");
+	})
+}
+
+//明星单品小图滑动
+//$(function(){
+//	var $Imgs = $(".oBig li");
+//	$Imgs.hover(function(){
+////		alert(1);
+//		$(this).find('img').animate({top:"-10px"},1000);
+//	})
+//})
+
+//无缝连接图
+//$(function(){
+//	var oul = $(".slide ul");
+//	var oli = $(".slide ul li");
+//	var oUl = $(oul)[0];
+//	var olis = $(oli).get();
+//	
+////	alert(oUl);
+//	alert(olis.length);
+//	
+//	oUl.innerHTML += oUl.innerHTML;
+////	oUl.style.width = olis.length * olis[0].offsetWidth + "px";
+//	alert(oUl.offsetWidth);
+//	setInterval(function(){
+//		startMove(oUl,{
+//			left : oUl.offsetLeft - olis[0].offsetWidth;
+//		},function(){
+//			if(oUl.offsetLeft <= -oUl.offsetWidth/2){
+//				oUl.style.left = 0;
+//			}
+//		})
+//	},2000)
+//	
+//})
+
+
 
 
 
