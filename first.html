@@ -10,7 +10,7 @@
 		<!--导航-->
 			<div id="top_list">
 				<span id="pic"><img src="first_img/logo1.jpg" alt="" /></span>
-				<ul>					
+				<ul class="font">					
 					<li>
 						<a id="list1" class="hover1" href="">
 							<span>个人&家庭产品</span>
@@ -35,7 +35,7 @@
 				</span>
 				
 				<img src="first_img/people.png" alt="" />
-				<span></span>
+				<span class="car"></span>
 				<span></span>
 				
 			<!--第一个二级菜单-->
@@ -719,7 +719,7 @@
 					<h3>联想网站群</h3>
 					<ul>
 						<li><a href="">联想创投</a></li>
-						<li><a href="">聚纯汇/a></li>
+						<li><a href="">聚纯汇</a></li>
 						<li><a href="">联系我们</a></li>
 						<li><a href="">销售网点查询</a></li>
 						<li><a href="">服务网点查询</a></li>
@@ -734,6 +734,30 @@
 			</ul>
 			<div>
 				<h3>联想官方社交平台</h3>
+				<p class="wecat">
+					<span><a href=""></a></span>
+					<span><a href=""></a></span>
+					<span><a href=""></a></span>
+					<span><a href=""></a></span>
+				</p>
+				<p class="blog">
+					<span></span>
+					<span></span>
+				</p>
+				<p>选择国家或地区</p>
+				<p class="choose"><img src="first_img/China.jpg" alt="" /></p>
+				<ul class="language">
+					<li><a href="">Angola</a></li>
+					<li><a href="">Australia</a></li>
+					<li><a href="">Bahrain</a></li>
+					<li><a href="">Botswana</a></li>
+					<li><a href="">Cameroon</a></li>
+					<li><a href="">Denmark</a></li>
+					<li><a href="">Ecuador</a></li>
+					<li><a href="">Egypt</a></li>
+					<li><a href="">France</a></li>
+					<li><a href="">Greece</a></li>
+				</ul>							
 			</div>
 		</div>
 		<script type="text/javascript" src="src/js/jquery-1.11.3.js">			
@@ -777,6 +801,30 @@
 				})
 			})
 			
+			//吸顶效果
+			var h = 100;
+			var nav = document.getElementById("top_list");
+//			var as = document.querySelectorAll("")
+			window.onscroll = function(){
+				//获取页面滚走的距离 
+				var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+				if( sTop>h ){
+					nav.style.position = "fixed";
+					nav.style.top = 0;
+					nav.style.background = "white";
+					nav.style.color = "black";					
+					$('#pic').find('img').attr("src","first_img/logo2.jpg");
+					$('.font a').css("color","black");
+					$('.car').css("background-position-x","-112px");
+		
+				}else{
+					nav.style.position = "";
+					nav.style.background = "none";
+					$('#pic').find('img').attr("src","first_img/logo1.jpg");
+					$('.font a').css("color","white");
+					$('.car').css("background-position-x","-72px");
+				}
+			}
 		</script>
 	</body>
 </html>

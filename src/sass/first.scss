@@ -23,7 +23,7 @@ a{
 /******************************导航logo************************/
 #top_list #pic{
     width: 60px;
-    height: 180px;
+//  height: 180px;
     border: none;
     float: left;
     /*background: url(../first_img/icons_1.png) no-repeat -346px -8px;*/    
@@ -464,11 +464,6 @@ a{
         li{
             width: 210px;
             float: left;
-//          div{
-//              clear: both;
-//              height: 0;
-//              overflow: hidden;
-//          }
             h3{
                 font-weight: normal;
                 font-size: 20px;
@@ -485,6 +480,9 @@ a{
                       line-height: 24px;
                       color:#ccc;
                   }
+                  a:hover{                      
+                      color:burlywood;
+                  }
               }
             }
         }
@@ -493,12 +491,91 @@ a{
         width: 220px;
         height: 380px;
         float:right;
-        background: pink;
+        position: relative;
         h3{
            font-weight: normal;
             font-size: 20px;
             line-height: 36px;
             color: #ccc; 
+        }
+        p{
+            width: 220px;
+            height: 50px;
+            span{
+                a{
+                   display: block;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                    margin-top: 10px;
+                    float: left;
+                    background: url(../first_img/icons_1.png) no-repeat -8px -189px; 
+                }
+                a:hover{
+                    background-position-y: -237px;
+                     transition:all 0.5s linear;
+                    -webkit-transform: rotateX(360deg);
+                }          
+            } 
+            span:nth-child(2) {
+                a{
+                    background-position-x: -62px;
+                }
+            }
+            span:nth-child(3) {
+                a{
+                    background-position-x: -118px;
+                }
+            } 
+            span:nth-child(4) {
+                a{
+                    background-position-x: -175px;
+                    margin-right: 0;
+                }
+            }      
+        }
+        p:nth-child(3){
+            span{
+                display: block;
+                width: 85px;
+                height: 26px;     
+                margin-top: 10px;
+                float: left;
+                background: url(../first_img/icons_1.png) no-repeat -8px -129px;
+            }
+            span:nth-child(2){
+                background-position-x: -118px;
+                margin-left: 20px;
+            }
+        }
+        p:nth-child(4){
+            line-height: 140px;
+            height: 90px;
+            font-size: 16px;
+            color: #ccc;
+            margin-left: 5px;
+        }
+        ul{
+            width: 185px;
+            height: 185px;
+            overflow-x: hidden;
+            overflow-y: scroll;
+            position: absolute;
+            left: 0;
+            top:40px;
+            z-index: 2;
+            background: white;
+            display: none;
+            a{
+                display: block;
+                font-size: 14px;
+                padding-left: 10px;
+                color: black;
+            }
+            a:hover{               
+                color: orangered;
+            }
+            
         }
         
     }
