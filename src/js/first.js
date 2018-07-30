@@ -1,84 +1,3 @@
-//轮播图
-function Slider(id){
-	this.Box = $id(id);
-	this.ullis = $get($get(this.Box,'ul')[0],'li');
-	this.num = this.ullis.length;
-	this.ollis = this.createEle();
-	this.indexA = 0;
-	this.slide();
-	this.ltBtn = $id('ltBtn');
-	this.rtBtn = $id('rtBtn');
-	this.addEvent();
-	this.timer = null;
-	this.autoPlay();
-}		
-Slider.prototype.createEle = function(){
-	let ol = $create("ol");
-	let arr = [];
-	for(let i =0;i<this.num;i++){
-		let li = $create("li");
-		arr.push(li);
-		ol.appendChild(li);			
-	}
-	this.Box.appendChild(ol);
-	return arr;
-}
-
-Slider.prototype.slide = function(){
-	for(let i=0;i<this.num;i++){
-		this.ullis[i].style.display = "none";
-		this.ollis[i].style.background = "#383838";
-		this.ollis[i].style.width = "8px";
-	}
-	this.ullis[this.indexA].style.display = "block";
-	this.ollis[this.indexA].style.background = "white";
-	this.ollis[this.indexA].style.width = "54px";
-//	startMove(this.ollis[this.indexA], {
-//                  width:54,                   
-//           });	
-}
-
-Slider.prototype.addEvent = function(){
-	this.ltBtn.onclick = function(){
-		this.indexA--;
-		if(this.indexA==-1){
-			this.indexA = this.num -1;
-		}
-		this.slide();
-	}.bind(this);
-	this.rtBtn.onclick = function(){
-		this.indexA++;
-		if(this.indexA==this.num){
-			this.indexA = 0;
-		}
-		this.slide();
-	}.bind(this);
-	for(let i=0;i<this.num;i++){
-		this.ollis[i].onmouseover= function(){
-			this.indexA = i;
-			this.slide();
-		}.bind(this);
-//		this.ollis[i].onmouseout= function(){
-//			this.style.width = '8px';
-//		}
-	}
-}
-Slider.prototype.autoPlay = function(){
-	this.timer = setInterval(function(){
-		this.indexA++;
-		if(this.indexA==this.num){
-			this.indexA = 0;
-		}
-		this.slide();
-	}.bind(this),3000)
-	this.Box.onmouseover = function(){
-		clearInterval(this.timer);
-	}.bind(this);
-	this.Box.onmouseout = function(){
-		this.autoPlay();
-	}.bind(this);	
-}
-
 //二级菜单
 
 $id('list1').onmouseover = function(){
@@ -150,13 +69,13 @@ $(function(){
 				var $index = $(this).index();//获取下标
 //				$(this).animate({opacity:1},500);
 				$lis.eq($index).removeClass().addClass("show").siblings().removeClass().addClass("hide");
-				$(this).find('img').attr("src","first_img/img"+($index +1) +"_b.png");
+				$(this).find('img').attr("src","../first_img/img"+($index +1) +"_b.png");
 				$(this).find('dd').css("color","#333");
 				
 			},function(){
 //				$(this).animate({opacity:0.5},500);
 				var $index = $(this).index();	
-				$(this).find('img').attr("src","first_img/img"+($index +1) +"_s.png");
+				$(this).find('img').attr("src","../first_img/img"+($index +1) +"_s.png");
 				$(this).find('dd').css("color","#888");
 			})
 		}
@@ -170,15 +89,15 @@ $(function(){
 	$ali.hover(function(){	
 		var $index = $(this).index();
 		$ali.eq($index).fadeToggle(300);
-		$ali.eq($index).css({"background-image":"url(first_img/phone.jpg)",
+		$ali.eq($index).css({"background-image":"url(../first_img/phone.jpg)",
 		"border-color":"#ebebeb"});
-		$ali.eq($index).find('img').attr("src","first_img/img2.png");
+		$ali.eq($index).find('img').attr("src","../first_img/img2.png");
 		$ali.eq($index).fadeToggle(500);
 		
 	},function(){
 		var $index = $(this).index();
 		$ali.eq($index).css({"background":"white","border-color":"white"});
-		$ali.eq($index).find('img').attr("src","first_img/imgs2.png");
+		$ali.eq($index).find('img').attr("src","../first_img/imgs2.png");
 	})
 })
 
@@ -245,33 +164,38 @@ $(function(){
 	})	
 })
 
-//***************************底部**************************
-$(function(){
-	
-	//************语言选择******************
-	 $(".choose").hover(function(){
-		$(".language").css("display","block");
-	},function(){
-		$(".language").css("display","none");
-	})
-	  $(".language").hover(function(){
-		$(".language").css("display","block");
-	},function(){
-		$(".language").css("display","none");
-	})
-	 
-	 //************微博图标******************
-	 var aspan = $(".blog span");
-	 aspan.hover(function(){
-	 	$(this).css("background-position-y","-155px");
-	 },function(){
-	 	$(this).css("background-position-y","-129px");
-	 })
-	 
-	 //************微信四个图标******************
-	 
-	 
-})
+function goods(){
+	$(function(){
+				$.getJSON("../src/json/first.json",function(data){
+					for(var attr in data){
+						var oDiv = $create("div");
+						var Img = `<img src="../first_img/${data[attr].left}"/>`;
+						$(oDiv).append(Img);
+						var oUl = $create("ul");
+						for(var i =0;i<data[attr].img.length;i++){
+							var oli = $create("li");
+							var ospan = $create('span');
+							var oImg = `<img src="../first_img/${data[attr].img[i]}"/>`;
+							ospan.innerHTML = data[attr].price[i];
+							$(oli).append(ospan);
+							$(oli).append(oImg);
+							$(oUl).append(oli);											
+						}
+						var oBig = $create("div");
+						$(oBig).append(oDiv);
+						$(oBig).append(oUl);
+						$(oBig).addClass("oBig");
+						$(".goodslist").append(oBig);
+						$(oBig).css("display","none");										
+					}
+//					$('img').wrap(function() {
+//						 return '<a href=""></a>';
+//					});
+					
+					fn1(".title ul li",".goodslist .oBig");
+				})
+			})
+}
 
 
 

@@ -1,0 +1,151 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+#top {
+  width: 1349px; }
+
+/*******************************导航*************************/
+#top_list {
+  position: absolute;
+  /*left: 60px;*/
+  width: 1349px;
+  z-index: 10; }
+
+/******************************导航logo************************/
+#top_list #pic {
+  width: 60px;
+  border: none;
+  float: left;
+  /*background: url(../first_img/icons_1.png) no-repeat -346px -8px;*/ }
+  #top_list #pic img {
+    display: block; }
+
+/*******************************导航列表*******************************/
+#top_list ul {
+  float: left; }
+
+#top_list li {
+  float: left; }
+
+#top_list li a {
+  display: block;
+  color: white;
+  margin-left: 11px;
+  margin-right: 11px;
+  line-height: 70px; }
+
+#top_list a .icont {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: url(../first_img/icons_2.png) no-repeat -214px -44px; }
+
+/*******************************导航搜索框**********************/
+#top_list span:nth-child(3) {
+  width: 250px;
+  height: 40px;
+  margin-top: 18px;
+  margin-left: 180px;
+  float: left;
+  position: relative; }
+
+#top_list #txt {
+  width: 245px;
+  height: 36px;
+  border: none;
+  background: #ccc;
+  opacity: 0.7;
+  border-radius: 18px;
+  color: #999;
+  padding-left: 20px; }
+
+#top_list #btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: url(../first_img/icons_2.png) no-repeat -8px -28px;
+  position: absolute;
+  right: 0;
+  top: 2px; }
+
+/*******************************导航小人**********************/
+#top_list img:nth-child(4) {
+  float: left;
+  margin-left: 30px;
+  margin-top: 18px; }
+
+/*******************************导航后图标************************/
+#top_list span:nth-child(5) {
+  width: 24px;
+  height: 22px;
+  float: left;
+  margin-left: 30px;
+  margin-top: 24px;
+  background: url(../first_img/icons_1.png) no-repeat -72px -72px; }
+
+#top_list span:nth-child(6) {
+  width: 22px;
+  height: 22px;
+  float: left;
+  margin-left: 2px;
+  margin-top: 15px;
+  background: url(../first_img/icons_2.png) no-repeat -184px -200px; }
+
+/*********************轮播图*********************/
+.container {
+  width: 1349px;
+  height: 600px;
+  overflow: hidden;
+  position: relative; }
+
+.container li img {
+  width: 1349px;
+  height: 600px; }
+
+.container span {
+  width: 40px;
+  height: 70px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 20px; }
+
+.container #rtBtn {
+  right: 20px;
+  left: auto; }
+
+.container span img {
+  margin-left: 10px;
+  margin-top: 10px; }
+
+.container span:hover {
+  background: black;
+  opacity: 0.5; }
+
+.container ol {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  /*background: rgba(255,255,255,.6);*/
+  border-radius: 7px;
+  padding: 3px;
+  z-index: 2; }
+
+.container ol li {
+  background: #383838;
+  float: left;
+  width: 8px;
+  height: 8px;
+  margin-left: 5px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  margin-right: 7px; }
