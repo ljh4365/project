@@ -25,6 +25,8 @@ a {
   border: none;
   float: left;
   /*background: url(../first_img/icons_1.png) no-repeat -346px -8px;*/ }
+  #top_list #pic img {
+    display: block; }
 
 /*******************************导航列表*******************************/
 #top_list ul {
@@ -394,95 +396,121 @@ a {
       left: 30px; }
 
 .top {
-  width: 1069px;
+  width: 1349px;
   height: 380px;
-  background: #272727;
-  padding: 0 120px 0 160px; }
-  .top ul {
-    width: 840px;
-    height: 380px;
-    float: left; }
-    .top ul li {
-      width: 210px;
+  background: #272727; }
+  .top .border {
+    width: 1069px;
+    height: 340px;
+    padding: 0 120px 0 160px;
+    border: 1px solid #424141; }
+    .top .border ul {
+      width: 840px;
+      height: 340px;
       float: left; }
-      .top ul li h3 {
+      .top .border ul li {
+        width: 210px;
+        float: left; }
+        .top .border ul li h3 {
+          font-weight: normal;
+          font-size: 20px;
+          line-height: 36px;
+          color: #ccc; }
+        .top .border ul li ul {
+          width: 210px;
+          height: 340px; }
+          .top .border ul li ul li a {
+            display: block;
+            font-size: 14px;
+            line-height: 24px;
+            color: #ccc; }
+          .top .border ul li ul li a:hover {
+            color: burlywood; }
+    .top .border div {
+      width: 220px;
+      height: 340px;
+      float: right;
+      position: relative; }
+      .top .border div h3 {
         font-weight: normal;
         font-size: 20px;
         line-height: 36px;
         color: #ccc; }
-      .top ul li ul {
-        width: 210px;
-        height: 380px; }
-        .top ul li ul li a {
+      .top .border div p {
+        width: 220px;
+        height: 50px; }
+        .top .border div p span a {
           display: block;
-          font-size: 14px;
-          line-height: 24px;
-          color: #ccc; }
-        .top ul li ul li a:hover {
-          color: burlywood; }
-  .top div {
-    width: 220px;
-    height: 380px;
-    float: right;
-    position: relative; }
-    .top div h3 {
-      font-weight: normal;
-      font-size: 20px;
-      line-height: 36px;
-      color: #ccc; }
-    .top div p {
-      width: 220px;
-      height: 50px; }
-      .top div p span a {
+          width: 40px;
+          height: 40px;
+          margin-right: 10px;
+          margin-top: 10px;
+          float: left;
+          background: url(../first_img/icons_1.png) no-repeat -8px -189px; }
+        .top .border div p span a:hover {
+          background-position-y: -237px;
+          transition: all 0.5s linear;
+          -webkit-transform: rotateX(360deg); }
+        .top .border div p span:nth-child(2) a {
+          background-position-x: -62px; }
+        .top .border div p span:nth-child(3) a {
+          background-position-x: -118px; }
+        .top .border div p span:nth-child(4) a {
+          background-position-x: -175px;
+          margin-right: 0; }
+      .top .border div p:nth-child(3) span {
         display: block;
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
+        width: 85px;
+        height: 26px;
         margin-top: 10px;
         float: left;
-        background: url(../first_img/icons_1.png) no-repeat -8px -189px; }
-      .top div p span a:hover {
-        background-position-y: -237px;
-        transition: all 0.5s linear;
-        -webkit-transform: rotateX(360deg); }
-      .top div p span:nth-child(2) a {
-        background-position-x: -62px; }
-      .top div p span:nth-child(3) a {
-        background-position-x: -118px; }
-      .top div p span:nth-child(4) a {
-        background-position-x: -175px;
-        margin-right: 0; }
-    .top div p:nth-child(3) span {
-      display: block;
-      width: 85px;
-      height: 26px;
-      margin-top: 10px;
+        background: url(../first_img/icons_1.png) no-repeat -8px -129px; }
+      .top .border div p:nth-child(3) span:nth-child(2) {
+        background-position-x: -118px;
+        margin-left: 20px; }
+      .top .border div p:nth-child(4) {
+        line-height: 140px;
+        height: 90px;
+        font-size: 16px;
+        color: #ccc;
+        margin-left: 5px; }
+      .top .border div ul {
+        width: 185px;
+        height: 185px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        position: absolute;
+        left: 0;
+        top: 40px;
+        z-index: 2;
+        background: white;
+        display: none; }
+        .top .border div ul a {
+          display: block;
+          font-size: 14px;
+          padding-left: 10px;
+          color: black; }
+        .top .border div ul a:hover {
+          color: orangered; }
+  .top .toplist {
+    width: 1209px;
+    padding-left: 70px;
+    padding-right: 70px; }
+    .top .toplist ul {
       float: left;
-      background: url(../first_img/icons_1.png) no-repeat -8px -129px; }
-    .top div p:nth-child(3) span:nth-child(2) {
-      background-position-x: -118px;
-      margin-left: 20px; }
-    .top div p:nth-child(4) {
-      line-height: 140px;
-      height: 90px;
-      font-size: 16px;
+      margin-top: 15px;
+      line-height: 14px;
+      height: 14px;
       color: #ccc;
-      margin-left: 5px; }
-    .top div ul {
-      width: 185px;
-      height: 185px;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      position: absolute;
-      left: 0;
-      top: 40px;
-      z-index: 2;
-      background: white;
-      display: none; }
-      .top div ul a {
-        display: block;
-        font-size: 14px;
-        padding-left: 10px;
-        color: black; }
-      .top div ul a:hover {
-        color: orangered; }
+      font-size: 14px; }
+      .top .toplist ul li {
+        float: left;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-left: 1px solid #ccc; }
+      .top .toplist ul li:nth-child(1) {
+        border-left: none; }
+    .top .toplist ul:nth-child(2) {
+      float: right; }
+      .top .toplist ul:nth-child(2) li:nth-child(1) {
+        border-left: none; }
