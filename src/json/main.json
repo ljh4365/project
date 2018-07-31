@@ -1,0 +1,88 @@
+{
+	"list1":{
+		"word":["常规笔记本","轻薄笔记本","便携笔记本","游戏笔记本","台式机/显示器","特色服务"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000","拯救者Y7000","拯救者Y7000","拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机","分体台式机"],
+				["私人订制","私人订制","私人订制","私人订制"]
+		],
+		"picture":["img1.jpg","img2.jpg"]
+	},
+	"list2":{
+		"word":["ThinkPad","ThinkPad","ThinkPad","ThinkPad","ThinkPad","特色服务"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000"],
+				["电脑包","鼠标","键盘","电池电源","电脑包","鼠标"],
+				["私人订制","私人订制","私人订制","私人订制"]
+		],
+		"picture":["img3.jpg","img4.jpg"]
+	},
+	"list3":{
+		"word":["Lenovo","Lenovo","Lenovo","Lenovo","Lenovo"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000","拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机"]				
+		],
+		"picture":["img5.jpg","img6.jpg"]
+	},
+	"list4":{
+		"word":["小新笔记本","轻薄笔记本","便携笔记本","游戏笔记本","特色服务"],
+		"list":[["ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机","分体台式机"],
+				["私人订制"]
+		],
+		"picture":["img7.jpg","img8.jpg"]
+	},
+	"list5":{
+		"word":["常规笔记本","轻薄笔记本","便携笔记本","游戏笔记本","台式机/显示器"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000","拯救者Y7000","拯救者Y7000","拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机","分体台式机"],
+				["私人订制","私人订制","私人订制","私人订制"]
+		],
+		"picture":["img1.jpg","img2.jpg"]
+	},
+	"list6":{
+		"word":["ThinkPad","ThinkPad","ThinkPad","ThinkPad","ThinkPad","特色服务"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000","拯救者Y7000"],
+				["电脑包","鼠标","键盘","电池电源","电脑包","鼠标","键盘"],
+				["私人订制","私人订制","私人订制","私人订制"]
+		],
+		"picture":["img3.jpg","img4.jpg"]
+	},
+	"list7":{
+		"word":["Lenovo","Lenovo","Lenovo","Lenovo","Lenovo"],
+		"list":[["ideapad 330c","ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000","拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机"]				
+		],
+		"picture":["img5.jpg","img6.jpg"]
+	},
+	"list8":{
+		"word":["小新笔记本","轻薄笔记本","便携笔记本","游戏笔记本","特色服务"],
+		"list":[["ideapad 330c","ideapad 330c"],
+				["小米新潮7000","小米新潮7000"],
+				["YOGA6 Pro","YOGA6 Pro","YOGA6 Pro","YOGA6 Pro"],
+				["拯救者Y7000"],
+				["分体台式机","分体台式机","分体台式机","分体台式机"],
+				["私人订制","私人订制"]
+		],
+		"picture":["img7.jpg","img8.jpg"]
+	}
+}

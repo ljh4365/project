@@ -695,33 +695,10 @@
 			goods();
 			
 			//吸顶效果
-			var h = 100;
-			var nav = document.getElementById("top_list");
-//			var as = document.querySelectorAll("")
-			window.onscroll = function(){
-				//获取页面滚走的距离 
-				var sTop = document.documentElement.scrollTop || document.body.scrollTop;
-				if( sTop>h ){
-					nav.style.position = "fixed";
-					nav.style.top = 0;
-					nav.style.background = "white";
-					nav.style.color = "black";					
-					$('#pic').find('img').attr("src","../first_img/logo2.jpg");
-					$('.font a').css("color","black");
-					$('.car').css("background-position-x","-112px");
-		
-				}else{
-					nav.style.position = "";
-					nav.style.background = "none";
-					$('#pic').find('img').attr("src","../first_img/logo1.jpg");
-					$('.font a').css("color","white");
-					$('.car').css("background-position-x","-72px");
-				}
-			}
+			ceiling(100);		
 			
 			//底部公共样式
 			$(function(){
-//				$("#banner").load("header.html");
 				$(".top").load("footer.html",function(){
 					bottom();
 				});											 

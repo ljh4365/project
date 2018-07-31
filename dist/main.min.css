@@ -9,6 +9,9 @@ li {
 a {
   text-decoration: none; }
 
+body {
+  background: #f5f5f5; }
+
 #top {
   width: 1349px; }
 
@@ -17,87 +20,135 @@ a {
   position: absolute;
   /*left: 60px;*/
   width: 1349px;
-  z-index: 10; }
-
-/******************************导航logo************************/
-#top_list #pic {
-  width: 60px;
-  border: none;
-  float: left;
-  /*background: url(../first_img/icons_1.png) no-repeat -346px -8px;*/ }
-  #top_list #pic img {
-    display: block; }
-
-/*******************************导航列表*******************************/
-#top_list ul {
-  float: left; }
-
-#top_list li {
-  float: left; }
-
-#top_list li a {
-  display: block;
-  color: white;
-  margin-left: 11px;
-  margin-right: 11px;
-  line-height: 70px; }
-
-#top_list a .icont {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  background: url(../first_img/icons_2.png) no-repeat -214px -44px; }
-
-/*******************************导航搜索框**********************/
-#top_list span:nth-child(3) {
-  width: 250px;
-  height: 40px;
-  margin-top: 18px;
-  margin-left: 180px;
-  float: left;
-  position: relative; }
-
-#top_list #txt {
-  width: 245px;
-  height: 36px;
-  border: none;
-  background: #ccc;
-  opacity: 0.7;
-  border-radius: 18px;
-  color: #999;
-  padding-left: 20px; }
-
-#top_list #btn {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: url(../first_img/icons_2.png) no-repeat -8px -28px;
-  position: absolute;
-  right: 0;
-  top: 2px; }
-
-/*******************************导航小人**********************/
-#top_list img:nth-child(4) {
-  float: left;
-  margin-left: 30px;
-  margin-top: 18px; }
-
-/*******************************导航后图标************************/
-#top_list span:nth-child(5) {
-  width: 24px;
-  height: 22px;
-  float: left;
-  margin-left: 30px;
-  margin-top: 24px;
-  background: url(../first_img/icons_1.png) no-repeat -72px -72px; }
-
-#top_list span:nth-child(6) {
-  width: 22px;
-  height: 22px;
-  float: left;
-  margin-left: 2px;
-  margin-top: 15px;
-  background: url(../first_img/icons_2.png) no-repeat -184px -200px; }
+  z-index: 10;
+  /******************************导航logo************************/
+  /***********************第一个导航列表*************************/
+  /**************************第二个导航列表********************/ }
+  #top_list #pic {
+    width: 60px;
+    border: none;
+    position: absolute;
+    z-index: 11; }
+    #top_list #pic img {
+      display: block; }
+  #top_list .top_nav {
+    padding-left: 70px;
+    width: 1349px;
+    height: 34px;
+    background: #444;
+    position: absolute; }
+    #top_list .top_nav ul {
+      float: left; }
+      #top_list .top_nav ul li {
+        float: left; }
+        #top_list .top_nav ul li a {
+          display: block;
+          padding: 0 12px;
+          color: #cacaca;
+          font-size: 12px;
+          line-height: 34px; }
+        #top_list .top_nav ul li a:hover {
+          color: white; }
+      #top_list .top_nav ul li:nth-child(7) a span {
+        float: left; }
+      #top_list .top_nav ul li:nth-child(7) a span:nth-child(2) {
+        float: right;
+        margin-top: 10px;
+        margin-left: 5px;
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: url(../main_img/icons.png) no-repeat -210px -24px; }
+    #top_list .top_nav p {
+      float: left;
+      margin-left: 100px;
+      padding-left: 20px;
+      color: #cacaca;
+      font-size: 12px;
+      line-height: 34px;
+      background: url(../main_img/horn.png) no-repeat left 10px; }
+    #top_list .top_nav .code {
+      width: 80px;
+      height: 120px;
+      position: absolute;
+      left: 380px;
+      top: 34px;
+      padding: 15px 20px 0;
+      text-align: center;
+      background: white;
+      z-index: 2;
+      display: none; }
+      #top_list .top_nav .code span:nth-child(1) {
+        display: block;
+        width: 80px;
+        height: 80px;
+        background: white;
+        background: url(../main_img/icons.png) -1px -70px; }
+      #top_list .top_nav .code span:nth-child(2) {
+        display: block;
+        color: #898989;
+        line-height: 20px; }
+  #top_list .nav {
+    background: #333;
+    width: 1349px;
+    position: absolute;
+    left: 0;
+    top: 34px;
+    /*******************************导航小人**********************/
+    /*******************************导航后图标************************/ }
+    #top_list .nav ul {
+      padding-left: 70px;
+      float: left; }
+      #top_list .nav ul li {
+        float: left; }
+        #top_list .nav ul li a {
+          display: block;
+          color: white;
+          margin-left: 11px;
+          margin-right: 11px;
+          line-height: 50px; }
+    #top_list .nav span:nth-child(2) {
+      width: 250px;
+      height: 40px;
+      margin-top: 8px;
+      margin-left: 140px;
+      float: left;
+      position: relative; }
+      #top_list .nav span:nth-child(2) #txt {
+        width: 245px;
+        height: 36px;
+        border: none;
+        background: #ccc;
+        opacity: 0.7;
+        border-radius: 18px;
+        color: #999;
+        padding-left: 20px; }
+      #top_list .nav span:nth-child(2) #btn {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        background: url(../first_img/icons_2.png) no-repeat -8px -28px;
+        position: absolute;
+        right: 0;
+        top: 2px; }
+    #top_list .nav img:nth-child(3) {
+      float: left;
+      margin-left: 50px;
+      margin-top: 8px; }
+    #top_list .nav span:nth-child(4) {
+      width: 24px;
+      height: 22px;
+      float: left;
+      margin-left: 30px;
+      margin-top: 14px;
+      background: url(../first_img/icons_1.png) no-repeat -72px -72px; }
+    #top_list .nav span:nth-child(5) {
+      width: 22px;
+      height: 22px;
+      float: left;
+      margin-left: 2px;
+      margin-top: 10px;
+      background: url(../first_img/icons_2.png) no-repeat -184px -200px; }
 
 /*********************轮播图*********************/
 .container {
@@ -149,3 +200,259 @@ a {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   margin-right: 7px; }
+
+.list {
+  width: 1200px;
+  height: 515px;
+  position: absolute;
+  top: 85px;
+  left: 85px;
+  z-index: 5; }
+  .list .list_L {
+    width: 190px;
+    height: 515px;
+    float: left; }
+    .list .list_L .lis {
+      padding: 0 20px;
+      height: 63px;
+      line-height: 63px;
+      border: 1px solid #e6e6e6;
+      border-top: none;
+      background: white; }
+      .list .list_L .lis a {
+        display: block;
+        color: #000000;
+        font-size: 14px;
+        float: left; }
+      .list .list_L .lis span {
+        width: 7px;
+        height: 12px;
+        margin-top: 25px;
+        background: url(../main_img/icons.png) -84px -35px;
+        float: right; }
+    .list .list_L .lastli {
+      height: 66px; }
+  .list .big {
+    width: 900px;
+    height: 495px;
+    float: left;
+    background: #f7f7f7;
+    padding: 20px 50px 0 60px;
+    display: none; }
+    .list .big .list_R {
+      width: 900px;
+      height: 515px; }
+      .list .big .list_R .left {
+        float: left; }
+        .list .big .list_R .left div {
+          width: 600px;
+          height: 70px; }
+          .list .big .list_R .left div p {
+            height: 40px;
+            line-height: 50px;
+            font-size: 14px; }
+          .list .big .list_R .left div p:hover {
+            color: #ba1f0f; }
+          .list .big .list_R .left div ul {
+            height: 30px;
+            margin-left: 56px;
+            border-bottom: 1px solid #e5e5e5; }
+            .list .big .list_R .left div ul li {
+              float: left;
+              line-height: 24px;
+              font-size: 14px;
+              padding: 0 15px;
+              border-left: 1px solid #e5e5e5; }
+            .list .big .list_R .left div ul li:hover {
+              color: #ba1f0f; }
+      .list .big .list_R .right {
+        float: right;
+        width: 260px;
+        height: 515px; }
+        .list .big .list_R .right img {
+          margin-top: 10px; }
+
+.picture {
+  width: 1229px;
+  height: 74px;
+  border-bottom: 1px solid #9c9c9c;
+  padding-left: 120px;
+  padding-top: 16px;
+  background: white; }
+  .picture dl {
+    float: left;
+    margin: 0 36px;
+    color: #9c9c9c;
+    line-height: 20px;
+    font-size: 12px;
+    text-align: center; }
+
+.shop {
+  width: 1209px;
+  height: 430px;
+  padding: 5px 70px 0; }
+  .shop .pic_L {
+    width: 195px;
+    float: left;
+    position: relative; }
+    .shop .pic_L img {
+      display: block;
+      width: 190px;
+      height: 420px; }
+    .shop .pic_L p {
+      width: 130px;
+      padding-left: 34px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 130px;
+      line-height: 40px;
+      font-size: 22px;
+      z-index: 2; }
+    .shop .pic_L p:nth-child(3) {
+      top: 170px;
+      line-height: 70px;
+      font-size: 26px; }
+    .shop .pic_L p:nth-child(4) {
+      top: 240px;
+      line-height: 60px;
+      font-size: 16px; }
+    .shop .pic_L span {
+      width: 40px;
+      height: 42px;
+      z-index: 2;
+      position: absolute;
+      top: 300px;
+      left: 30px;
+      font-size: 20px;
+      line-height: 42px;
+      text-align: center;
+      font-weight: bold; }
+    .shop .pic_L span:nth-child(6) {
+      left: 76px; }
+    .shop .pic_L span:nth-child(7) {
+      left: 120px; }
+    .shop .pic_L span:nth-child(8) {
+      width: 150px;
+      height: 50px;
+      line-height: 50px;
+      left: 10px;
+      top: 365px;
+      font-size: 24px; }
+  .shop .pic_R {
+    width: 1005px;
+    float: right; }
+    .shop .pic_R li {
+      float: left;
+      width: 490px;
+      height: 208px;
+      margin: 0 5px 10px;
+      background: white; }
+      .shop .pic_R li img {
+        display: block;
+        width: 208px;
+        height: 208px;
+        display: block;
+        float: left; }
+      .shop .pic_R li dl {
+        float: right;
+        width: 270px;
+        height: 164px;
+        padding-left: 12px;
+        padding-top: 50px; }
+        .shop .pic_R li dl dt {
+          width: 240px;
+          height: 80px;
+          line-height: 26px;
+          font-size: 18px;
+          font-weight: bold; }
+        .shop .pic_R li dl dd {
+          line-height: 30px; }
+          .shop .pic_R li dl dd span:nth-child(1) {
+            width: 140px;
+            height: 28px;
+            border: 1px solid #fe6a00;
+            float: left;
+            padding: 0 5px; }
+            .shop .pic_R li dl dd span:nth-child(1) i:nth-child(1) {
+              float: left;
+              color: #fe6a00; }
+            .shop .pic_R li dl dd span:nth-child(1) i:nth-child(2) {
+              font-style: normal;
+              color: #767676;
+              font-size: 12px;
+              text-decoration: line-through;
+              float: right; }
+          .shop .pic_R li dl dd span:nth-child(2) {
+            width: 65px;
+            height: 30px;
+            background: #fe6a00;
+            border: none;
+            float: left;
+            color: white;
+            padding-left: 15px; }
+    .shop .pic_R li:nth-child(3) {
+      margin-bottom: 0; }
+    .shop .pic_R li:nth-child(4) {
+      margin-bottom: 0; }
+
+.product {
+  width: 1200px;
+  height: 620px;
+  padding: 0 74px; }
+  .product .infor {
+    width: 1200px;
+    height: 84px; }
+    .product .infor h3 {
+      float: left;
+      line-height: 120px;
+      height: 84px;
+      font-size: 20px;
+      font-weight: normal; }
+    .product .infor ul {
+      float: right; }
+      .product .infor ul li {
+        float: left;
+        padding-left: 16px; }
+        .product .infor ul li a {
+          display: block;
+          color: #6f7170;
+          font-size: 14px;
+          line-height: 130px;
+          height: 84px; }
+  .product .item {
+    width: 1200px;
+    height: 536px; }
+    .product .item img {
+      width: 240px;
+      display: block;
+      float: left; }
+    .product .item div {
+      width: 960px;
+      float: right; }
+      .product .item div dl {
+        width: 238px;
+        height: 266px;
+        border: 1px solid #dedede;
+        border-left: none;
+        float: left;
+        background: white; }
+        .product .item div dl dt {
+          width: 238px; }
+          .product .item div dl dt img {
+            display: block;
+            width: 164px;
+            height: 164px;
+            margin: 20px 36px 0; }
+        .product .item div dl dd {
+          width: 238px;
+          height: 100px; }
+          .product .item div dl dd span {
+            display: block;
+            text-align: center;
+            font-size: 14px;
+            line-height: 22px; }
+          .product .item div dl dd span:nth-child(2) {
+            color: #6f7170; }
+          .product .item div dl dd span:nth-child(3) {
+            color: #e2231a; }

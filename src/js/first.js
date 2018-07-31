@@ -101,6 +101,40 @@ $(function(){
 	})
 })
 
+//明星单品二级菜单
+function goods(){
+	$(function(){
+	$.getJSON("../src/json/first.json",function(data){
+		for(var attr in data){
+			var oDiv = $create("div");
+				var Img = `<img src="../first_img/${data[attr].left}"/>`;
+				$(oDiv).append(Img);
+				var oUl = $create("ul");
+				for(var i =0;i<data[attr].img.length;i++){
+					var oli = $create("li");
+					var ospan = $create('span');
+					var oImg = `<img src="../first_img/${data[attr].img[i]}"/>`;
+					ospan.innerHTML = data[attr].price[i];
+					$(oli).append(ospan);
+					$(oli).append(oImg);
+					$(oUl).append(oli);											
+				}
+				var oBig = $create("div");
+				$(oBig).append(oDiv);
+				$(oBig).append(oUl);
+				$(oBig).addClass("oBig");
+				$(".goodslist").append(oBig);
+				$(oBig).css("display","none");										
+			}
+//					$('img').wrap(function() {
+//						 return '<a href=""></a>';
+//					});
+					
+			fn1(".title ul li",".goodslist .oBig");
+		})
+	})
+}
+
 //明星单品
 function fn1(ele1,ele2){
 	var $tab = $(ele1);
@@ -164,39 +198,30 @@ $(function(){
 	})	
 })
 
-function goods(){
-	$(function(){
-				$.getJSON("../src/json/first.json",function(data){
-					for(var attr in data){
-						var oDiv = $create("div");
-						var Img = `<img src="../first_img/${data[attr].left}"/>`;
-						$(oDiv).append(Img);
-						var oUl = $create("ul");
-						for(var i =0;i<data[attr].img.length;i++){
-							var oli = $create("li");
-							var ospan = $create('span');
-							var oImg = `<img src="../first_img/${data[attr].img[i]}"/>`;
-							ospan.innerHTML = data[attr].price[i];
-							$(oli).append(ospan);
-							$(oli).append(oImg);
-							$(oUl).append(oli);											
-						}
-						var oBig = $create("div");
-						$(oBig).append(oDiv);
-						$(oBig).append(oUl);
-						$(oBig).addClass("oBig");
-						$(".goodslist").append(oBig);
-						$(oBig).css("display","none");										
-					}
-//					$('img').wrap(function() {
-//						 return '<a href=""></a>';
-//					});
-					
-					fn1(".title ul li",".goodslist .oBig");
-				})
-			})
-}
+//吸顶效果
+function ceiling(h){
+	var nav = document.getElementById("top_list");
+	window.onscroll = function(){
+		//获取页面滚走的距离 
+		var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+		if( sTop>h ){
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+			nav.style.background = "white";
+			nav.style.color = "black";					
+			$('#pic').find('img').attr("src","../first_img/logo2.jpg");
+			$('.font a').css("color","black");
+			$('.car').css("background-position-x","-112px");
 
+		}else{
+			nav.style.position = "";
+			nav.style.background = "none";
+			$('#pic').find('img').attr("src","../first_img/logo1.jpg");
+			$('.font a').css("color","white");
+			$('.car').css("background-position-x","-72px");
+		}
+	}
+}
 
 
 
