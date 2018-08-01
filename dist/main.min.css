@@ -228,7 +228,7 @@ body {
         width: 7px;
         height: 12px;
         margin-top: 25px;
-        background: url(../main_img/icons.png) -84px -35px;
+        background: url(../main_img/icons.png) no-repeat -84px -35px;
         float: right; }
     .list .list_L .lastli {
       height: 66px; }
@@ -516,3 +516,100 @@ body {
         color: black; }
   .information .UL .LI:last-child {
     width: 160px; }
+
+#LoutiNav {
+  width: 60px;
+  position: fixed;
+  top: 150px;
+  left: 5px;
+  display: none; }
+  #LoutiNav ul li {
+    width: 60px;
+    height: 32px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+    line-height: 32px;
+    position: relative;
+    cursor: pointer; }
+    #LoutiNav ul li span {
+      width: 60px;
+      height: 32px;
+      color: black;
+      background: #f5f5f5;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: none; }
+  #LoutiNav ul li:hover span {
+    display: block; }
+  #LoutiNav ul li.first i {
+    display: block;
+    margin-left: 20px;
+    margin-top: 12px;
+    width: 20px;
+    height: 20px;
+    background: url(../main_img/icons.png) no-repeat -2px -458px; }
+
+#logo {
+  width: 300px;
+  height: 310px;
+  position: fixed;
+  top: 150px;
+  right: 10px;
+  display: none; }
+  #logo ul {
+    width: 47px;
+    float: right; }
+    #logo ul li {
+      width: 47px;
+      height: 54px;
+      background: url(../main_img/right1.png) no-repeat -1308px -321px; }
+    #logo ul li:nth-child(2) {
+      background-position-y: -375px; }
+    #logo ul li:nth-child(3) {
+      background-position-y: -430px; }
+    #logo ul li:nth-child(4) {
+      background-position-y: -485px; }
+    #logo ul li:nth-child(5) {
+      background-position-y: -540px; }
+    #logo ul li:nth-child(6) {
+      height: 18px;
+      background-position-y: -595px; }
+    #logo ul li:hover {
+      background-position-y: -2px; }
+    #logo ul li:nth-child(2):hover {
+      background-position-y: -57px; }
+    #logo ul li:nth-child(3):hover {
+      background-position-y: -113px; }
+    #logo ul li:nth-child(4):hover {
+      background-position-y: -169px; }
+    #logo ul li:nth-child(5):hover {
+      background-position-y: -215px; }
+    #logo ul li:nth-child(6):hover {
+      background-position-y: -272px; }
+  #logo div {
+    float: left;
+    width: 240px;
+    padding-right: 10px;
+    position: relative; }
+    #logo div p {
+      background: url(../main_img/right1.png) no-repeat -442px 0;
+      width: 196px;
+      height: 52px;
+      display: none;
+      position: absolute;
+      top: 2px;
+      right: 10px; }
+    #logo div p:nth-child(2) {
+      width: 216px;
+      height: 154px;
+      background-position-x: -1064px;
+      display: none;
+      top: 62px; }
+    #logo div p:nth-child(3) {
+      width: 234px;
+      height: 98px;
+      background-position-x: -793px;
+      display: none;
+      top: 200px; }

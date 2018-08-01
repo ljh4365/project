@@ -92,7 +92,7 @@ $(function(){
 	})
 })
 
-//吸顶效果
+//***************************吸顶效果****************************
 function ceiling(h){
 	var nav = document.getElementById("nav");
 	var pic = document.getElementById("pic");
@@ -113,7 +113,7 @@ function ceiling(h){
 	}
 } 
 
-//倒计时
+//*************************倒计时******************************
 function timer(){
 	var now = new Date();
 	var end = new Date("2018-8-8 20:00:00");
@@ -164,11 +164,60 @@ function num(num){
 	}
 }
 
+//************************楼梯和右边导航出现***************************
+function stairs(){
+	var LoutiNav = document.getElementById("LoutiNav");
+	var logo = document.getElementById("logo");
+	window.onscroll = function(){
+		//获取页面滚走的距离 
+		var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+		if( sTop>1000 && sTop<4800){
+			LoutiNav.style.display = "block";
+			logo.style.display = "block";
+		}else{
+			LoutiNav.style.display = "none";
+			logo.style.display = "none";
+		}			
+	}
+}
 
+//****************************楼梯***************************
+$(function(){
+	var loutis = $("#LoutiNav ul li").not(".first");	
+	loutis.click(function(){
+		var $index = $(this).index() -1;
+		var $top = $(".product").eq($index).offset().top;
+		$("body,html").animate({
+			scrollTop: $top
+		}, 500)
+	})
+	
+})
+$(".first").click(function(){
+	var $top = $(".shop").offset().top;
+	$("body,html").animate({
+		scrollTop: $top
+	},500)
+})
 
+//************************右边导航*************************
+$("#logo ul li").eq(0).hover(function(){
+	$(".p_1").css("display","block");
+},function(){
+	$(".p_1").css("display","none");
+})
 
+$("#logo ul li").eq(1).hover(function(){
+	$(".p_2").css("display","block");
+},function(){
+	$(".p_2").css("display","none");
+})
 
-
+$("#logo ul li").eq(4).hover(function(){
+	$(".p_3").css("display","block");
+},function(){
+	$(".p_3").css("display","none");
+})
 
 
 
