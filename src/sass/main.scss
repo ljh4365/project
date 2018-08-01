@@ -383,7 +383,6 @@ body{
             width: 40px;
             height: 42px;
             z-index: 2;
-//          background: yellow;
             position: absolute;
             top:300px;
             left: 30px;
@@ -506,6 +505,9 @@ body{
                     line-height: 130px;
                     height: 84px;
                 }
+                a:hover{
+                    color: black;
+                }
             }
         } 
     }
@@ -526,9 +528,10 @@ body{
                 border: 1px solid #dedede;
                 border-left:none ;
                 float: left;
-                background: white;
+                background: white; 
+                position: relative;              
                 dt{
-                    width: 238px;
+                    width: 238px;                    
                     img{
                         display: block;
                         width: 164px;
@@ -552,13 +555,92 @@ body{
                         color: #e2231a;
                     }
                 }
+                i{
+                    display: block;
+                    width: 55px;
+                    height: 55px;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    z-index: 2;
+//                  background: url(../main_img/icons.png) no-repeat 0 -700px;
+                }
+            }
+            dl:nth-child(1){
+                i{
+                   background: url(../main_img/icons.png) no-repeat 0 -700px; 
+                }
+            }
+            dl:nth-child(5){
+                i{
+                   background: url(../main_img/icons.png) no-repeat 0 -820px; 
+                }
             }
         }
     }
-    
 }
 
+//****************************客户保障***********************
+.service{
+    width: 1200px;
+    height: 50px;
+    padding: 0 74px;
+    margin-top: 90px;
+    p{
+        padding-right: 128px;
+        float:left;
+        span:nth-child(1){
+            display: block;
+            width: 20px;
+            height: 20px;
+            float: left;
+            background: url(../main_img/icons.png) no-repeat -20px -3px;
+        }
+        span:nth-child(2){
+            float: left;
+            line-height: 20px;
+            font-size: 16px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        
+    }
+    p:last-child{
+        padding-right: 0;
+    }
+}
 
+//*****************************列表信息*************************
+.information{
+    width: 1275px;
+    height: 170px;
+    padding-left:74px;
+    background: white;
+    .UL{
+        .LI{
+            float: left;
+            width: 220px;
+            h3{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 54px;
+                height: 40px;
+            }
+            ul{
+                font-size: 12px;
+                line-height: 22px;
+                color: #555;
+                li:hover{
+                    color: black;
+                }
+            }
+            
+        }
+        .LI:last-child{
+            width: 160px;
+        }
+    }
+}
 
 
 
