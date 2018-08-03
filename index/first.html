@@ -25,7 +25,7 @@
 							<span class="icont" id="icont2"></span>
 						</a>
 					</li>
-					<li><a href="">商城</a></li>
+					<li><a href="main.html">商城</a></li>
 					<li><a href="">社区</a></li>
 					<li><a href="">服务</a></li>
 					<li><a href="">资讯</a></li>
@@ -36,9 +36,13 @@
 					<input type="button" name="" id="btn" value="" />
 				</span>
 				
-				<img src="first_img/people.png" alt="" />
+				<a id="user" href="regist.html"><img src="../first_img/people.png" alt="" /></a>
 				<span class="car"></span>
 				<span></span>
+				<div class="user">				
+					<a href="main.html">我的商城</a>
+					<a href="login.html">退出登录</a>
+				</div>
 				
 			<!--第一个二级菜单-->
 				<div id="list_1">
@@ -642,14 +646,17 @@
                     <li><a href="">智能产品</a></li>
                 </ul>
             </div>
-            <div class="goodslist">
-            	<!--<div class="listleft"><img src="../first_img/item_1.jpg" alt="" /></div>
-            	<ul>
-            		<li><a href=""><img src="../first_img/item1.jpg" alt="" /></a></li>
-            		<li><a href=""><img src="../first_img/item2.jpg" alt="" /></a></a></li>
-            		<li><a href=""><img src="../first_img/item3.jpg" alt="" /></a></a></li>
-            		<li><a href=""><img src="../first_img/item4.jpg" alt="" /></a></a></li>
-            	</ul>-->           
+            <div class="goodslist">         	
+            	<!--<div class="oBig">
+            		<div class="listleft"><img src="../first_img/item_1.jpg" alt="" /></div>
+            		<ul>
+	            		<li><a href=""><img src="../first_img/item1.jpg" alt="" /></a></li>
+	            		<li><a href=""><img src="../first_img/item2.jpg" alt="" /></a></a></li>
+	            		<li><a href=""><img src="../first_img/item3.jpg" alt="" /></a></a></li>
+	            		<li><a href=""><img src="../first_img/item4.jpg" alt="" /></a></a></li>
+	            	</ul>     
+            	</div>-->
+            	      
             </div>                       
 		</div>
 		<!--无缝连接图-->
@@ -703,6 +710,25 @@
 					bottom();
 				});											 
 			})
+			
+			$(function(){
+				$("#user").hover(function(){
+					$(".user").css("display","block");
+				},function(){
+					$(".user").css("display","none");
+				})
+			})	
+			$(function(){
+				$(".user").hover(function(){
+					$(".user").css("display","block");
+				},function(){
+					$(".user").css("display","none");
+				})
+			})
+				
+			
+			
+			
 		</script>
 	</body>
 </html>

@@ -12,8 +12,8 @@
 			<span id="pic"><img src="../first_img/logo1.jpg" alt="" /></span>
 			<div class="top_nav">
 				<ul>
-					<li><a href="">联想商城</a></li>
-					<li><a href="">商城</a></li>
+					<li><a href="first.html">联想商城</a></li>
+					<li><a href="main.html">商城</a></li>
 					<li><a href="">社区</a></li>
 					<li><a href="">服务</a></li>
 					<li><a href="">资讯</a></li>
@@ -46,9 +46,14 @@
 					<input type="button" name="" id="btn" value="" />
 				</span>
 				
-				<img src="../first_img/people.png" alt="" />
+				<a href="regist.html" id="user"><img src="../first_img/people.png" alt="" /></a>
 				<span class="car"></span>
-				<span></span>		
+				<span></span>
+				<div class="user">
+					<p class="people"></p>
+					<a href="main.html">我的商城</a>
+					<a href="login.html">退出登录</a>
+				</div>
 			</div>				
 		</div>
 		<!--轮播图-->
@@ -275,7 +280,7 @@
 			</div>
 			<div class="item">
 				<img src="../main_img/list1.jpg" alt="" />
-				<div>
+				<div class="one">
 					<dl>
 						<dt>
 							<img src="../main_img/item1.jpg" alt="" />
@@ -972,14 +977,32 @@
 			new Slider("banner");
 			//二级菜单
 			fn();
-			//吸顶效果
-			ceiling(20);
-//			stairs();
+			//吸顶效果和楼梯出现
+			ceiling();
 			//底部样式
 			$(function(){
 				$(".top").load("footer.html",function(){
 					bottom();
 				});											 
+			})
+			
+			$(function(){
+				var str = location.search;
+				var name = str.substr(str.indexOf("=")+1);
+				$(".people").html("您好,"+name);
+				$("#user").hover(function(){
+					$(".user").css("display","block");
+				},function(){
+					$(".user").css("display","none");
+				})
+			})
+			
+			$(function(){
+				$(".user").hover(function(){
+					$(".user").css("display","block");
+				},function(){
+					$(".user").css("display","none");
+				})
 			})
 		</script>
 	</body>

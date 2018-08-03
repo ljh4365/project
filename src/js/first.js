@@ -125,12 +125,16 @@ function goods(){
 				$(oBig).addClass("oBig");
 				$(".goodslist").append(oBig);
 				$(oBig).css("display","none");										
-			}
-//					$('img').wrap(function() {
-//						 return '<a href=""></a>';
-//					});
-					
+		}					
 			fn1(".title ul li",".goodslist .oBig");
+			var $Imgs = $(".oBig ul li");
+//			alert($Imgs.length)
+			$Imgs.hover(function(){
+				$(this).find('img').css({"transform":"scale(1.1)","transition":"all 0.5s"});
+	
+			},function(){
+				$(this).find('img').css({"transform":"scale(1)","transition":"all 0.5s"});
+			})			
 		})
 	})
 }
@@ -149,14 +153,6 @@ function fn1(ele1,ele2){
 	})
 }
 
-//明星单品小图滑动
-//$(function(){
-//	var $Imgs = $(".oBig li");
-//	$Imgs.hover(function(){
-////		alert(1);
-//		$(this).find('img').animate({"margin-top":-10},1000);
-//	})
-//})
 
 //无缝连接图
 $(function(){
@@ -164,14 +160,9 @@ $(function(){
 	var olis = $(".slide ul li").get();
 	var btn_L = $(".btn_L");
 	var btn_R = $(".btn_R");
-	
-//	alert(btn_L);
-//	alert(olis.length);
 	var length = olis.length * olis[0].offsetWidth;
-//	alert(olis[0].offsetWidth);
 	oUl.innerHTML += oUl.innerHTML;
 	oUl.style.width = length + "px";
-//	alert(olis[0].offsetWidth);
 	var timer = setInterval(function(){
 		startMove(oUl,{			
 			left : oUl.offsetLeft - 269

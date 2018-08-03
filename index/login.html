@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../dist/login.min.css"/>
+	</head>
+	<body>
+		<div class="top_nav">
+			<ul>
+				<li><a href="first.html">联想商城</a></li>
+				<li><a href="main.html">商城</a></li>
+				<li><a href="">社区</a></li>
+				<li><a href="">服务</a></li>
+				<li><a href="">资讯</a></li>
+				<li><a href="">门店</a></li>
+				<li class="show">
+					<a href="">
+						<span>手机版</span>
+						<span class="up"></span>
+					</a>
+				</li>					
+			</ul>
+			<p>#快递员就是工程师# 极速到家三小时送货上门，免费新机开荒</p>
+			<div class="code">
+				<span></span>
+				<span>联想客户端</span>
+			</div>
+		</div>
+		<span class="pic">
+			<img src="../first_img/logo1.jpg" alt="" />
+		</span>
+		
+		<div class="login">
+			<h3>联想会员登录</h3>
+			<input type="text" placeholder="邮箱/手机号" name="" id="user"/>
+			<input type="password" placeholder="密码" name="" id="pwd"/>
+			<p>
+				<input type="checkbox" name="" id="" value="" checked="checked"/>
+				<span>自动登录</span>
+			</p>
+			<p class="warn"></p>
+			<input type="submit" name="" id="btn" value="登录"/>
+			<p>
+				<a href="">忘记密码？</a>
+				<a href="regist.html">立即注册</a>				
+			</p>	
+			<fieldset id="">
+				<legend>其他登录方式</legend>						
+			</fieldset>
+			<p>
+				<img src="../main_img/qq.png" alt="" />
+				<img src="../main_img/weixin.png" alt="" />
+				<img src="../main_img/weibo.png" alt="" />
+				<img src="../main_img/zhifubao.png" alt="" />
+			</p>
+		
+		</div>
+		
+		<script type="text/javascript" src="../src/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../src/js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#btn").click(function(){
+					if($.cookie("name") == $("#user").val() && $.cookie("password") == $("#pwd").val()){
+						window.location = "main.html?key=" + $("#user").val();
+					}else{
+						$(".warn").html("用户名或密码输入错误，请再次输入").css({"display":"block","color":"red"});
+					}
+				})
+			})
+		</script>
+	</body>
+</html>

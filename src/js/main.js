@@ -92,27 +92,6 @@ $(function(){
 	})
 })
 
-//***************************吸顶效果****************************
-function ceiling(h){
-	var nav = document.getElementById("nav");
-	var pic = document.getElementById("pic");
-	window.onscroll = function(){
-		//获取页面滚走的距离 
-		var sTop = document.documentElement.scrollTop || document.body.scrollTop;
-		if( sTop>h ){
-			nav.style.position = "fixed";
-			nav.style.top = 0;
-			pic.style.position = "fixed";
-			pic.style.top = 0;
-			$('#pic').find('img').attr("src","../main_img/logo2.jpg");
-		}else{
-			nav.style.position = "";
-			pic.style.position = "";
-			$('#pic').find('img').attr("src","../main_img/logo1.jpg");
-		}
-	}
-} 
-
 //*************************倒计时******************************
 function timer(){
 	var now = new Date();
@@ -165,22 +144,56 @@ function num(num){
 }
 
 //************************楼梯和右边导航出现***************************
-function stairs(){
+//function stairs(){
+//	var LoutiNav = document.getElementById("LoutiNav");
+//	var logo = document.getElementById("logo");
+//	window.onscroll = function(){
+//		//获取页面滚走的距离 
+//		var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+//		if( sTop>1000 && sTop<4800){
+//			LoutiNav.style.display = "block";
+//			logo.style.display = "block";
+//		}else{
+//			LoutiNav.style.display = "none";
+//			logo.style.display = "none";
+//		}			
+//	}
+//}
+
+//**********************吸顶效果和楼梯出现******************
+function ceiling(h){
+	var nav = document.getElementById("nav");
+	var pic = document.getElementById("pic");
+	
 	var LoutiNav = document.getElementById("LoutiNav");
 	var logo = document.getElementById("logo");
 	window.onscroll = function(){
 		//获取页面滚走的距离 
 		var sTop = document.documentElement.scrollTop || document.body.scrollTop;
+		//吸顶出现
+		if( sTop>200){
+			nav.style.position = "fixed";
+			nav.style.top = 0;
+			pic.style.position = "fixed";
+			pic.style.top = 0;
+			$('#pic').find('img').attr("src","../main_img/logo2.jpg");
+		}else{
+			nav.style.position = "absolute";
+			nav.style.top ="34px";
+			pic.style.position = "absolute";
+			$('#pic').find('img').attr("src","../main_img/logo1.jpg");
+		}
+		
+		//楼梯出现
 		if( sTop>1000 && sTop<4800){
 			LoutiNav.style.display = "block";
 			logo.style.display = "block";
 		}else{
 			LoutiNav.style.display = "none";
 			logo.style.display = "none";
-		}			
+		}	
 	}
-}
-
+} 
 //****************************楼梯***************************
 $(function(){
 	var loutis = $("#LoutiNav ul li").not(".first");	
@@ -219,7 +232,13 @@ $("#logo ul li").eq(4).hover(function(){
 	$(".p_3").css("display","none");
 })
 
-
+//**************************一楼产品跳转***********************
+$(function(){
+	var goods = $(".one dl");
+	 goods.click(function(){
+	 	window.location = "detail.html";
+	 })
+})
 
 
 

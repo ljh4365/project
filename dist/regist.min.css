@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  width: 1349px;
+  height: 910px;
+  background: #f7f7f7; }
+
+.top_nav {
+  padding-left: 70px;
+  width: 1279px;
+  height: 34px;
+  background: #444; }
+  .top_nav ul {
+    float: left; }
+    .top_nav ul li {
+      float: left; }
+      .top_nav ul li a {
+        display: block;
+        padding: 0 12px;
+        color: #cacaca;
+        font-size: 12px;
+        line-height: 34px; }
+      .top_nav ul li a:hover {
+        color: white; }
+    .top_nav ul li:nth-child(7) a span {
+      float: left; }
+    .top_nav ul li:nth-child(7) a span:nth-child(2) {
+      float: right;
+      margin-top: 10px;
+      margin-left: 5px;
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: url(../main_img/icons.png) no-repeat -210px -24px; }
+  .top_nav p {
+    float: left;
+    margin-left: 100px;
+    padding-left: 20px;
+    color: #cacaca;
+    font-size: 12px;
+    line-height: 34px;
+    background: url(../main_img/horn.png) no-repeat left 10px; }
+  .top_nav .code {
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    left: 380px;
+    top: 34px;
+    padding: 15px 20px 0;
+    text-align: center;
+    background: white;
+    z-index: 2;
+    display: none; }
+    .top_nav .code span:nth-child(1) {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background: white;
+      background: url(../main_img/icons.png) -1px -70px; }
+    .top_nav .code span:nth-child(2) {
+      display: block;
+      color: #898989;
+      line-height: 20px; }
+
+.pic {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.regist {
+  width: 360px;
+  height: 676px;
+  padding: 0 240px;
+  background: white;
+  margin: 60px auto 0; }
+  .regist h3 {
+    font-size: 30px;
+    height: 100px;
+    line-height: 140px;
+    text-align: center; }
+  .regist .p_1 {
+    font-size: 18px;
+    line-height: 20px;
+    height: 20px;
+    color: #424242;
+    padding: 20px 0;
+    text-align: center; }
+  .regist input {
+    width: 360px;
+    height: 50px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 15px;
+    padding-left: 15px; }
+  .regist #btn {
+    background: #e22319;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    width: 380px; }
+  .regist .p_2 {
+    width: 360px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #757575; }
+    .regist .p_2 span {
+      color: black; }
+  .regist .p_3 {
+    width: 360px; }
+    .regist .p_3 a {
+      display: block;
+      float: right;
+      color: red;
+      margin-left: 10px; }
+    .regist .p_3 span {
+      float: right;
+      color: #757575; }
+  .regist .warn {
+    width: 380px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    margin-top: -5px;
+    margin-bottom: 10px;
+    display: none; }

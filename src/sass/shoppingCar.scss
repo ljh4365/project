@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.top{
+    width: 1200px;
+    height: 36px;
+    padding: 0 74px;
+    background: black;
+    ul{
+        float: right;
+        margin-top: 7px;
+        li{
+            float: left;
+            height: 16px;
+            a{
+                color: white;
+                padding: 0 8px;
+                border-right: 1px solid #ccc;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+    }
+}
+
+.service{
+    width: 1200px;
+    height: 50px;
+    padding: 0 74px;
+    background:#f5f5f5;
+    position: fixed;
+    bottom: 170px;
+    p{
+        padding-right: 128px;
+        padding-top: 15px;
+        float:left;
+        span:nth-child(1){
+            display: block;
+            width: 20px;
+            height: 20px;
+            float: left;
+            background: url(../main_img/icons.png) no-repeat -20px -3px;
+        }
+        span:nth-child(2){
+            float: left;
+            line-height: 20px;
+            font-size: 16px;
+            padding-left: 5px;
+            font-weight: bold;
+        }
+        
+    }
+    p:last-child{
+        padding-right: 0;
+    }
+}
+
+//*****************************列表信息*************************
+.information{
+    position: fixed;
+    bottom: 0;
+    width: 1275px;
+    height: 170px;
+    padding-left:74px;
+    background: white;
+    .UL{
+        .LI{
+            float: left;
+            width: 220px;
+            h3{
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 54px;
+                height: 40px;
+            }
+            ul{
+                font-size: 12px;
+                line-height: 22px;
+                color: #555;
+                li:hover{
+                    color: black;
+                }
+            }
+            
+        }
+        .LI:last-child{
+            width: 160px;
+        }
+    }
+}
+
+//**************************列表***************************
+.cartList{
+    width: 1200px;
+    margin: 30px 74px 0;  
+    .cartHead { 
+        background: #f8f8f8;
+        border: 1px solid #d9d8d6;
+        height: 40px;
+        li {
+            width: 198px;
+            height: 40px;
+            float: left;
+            font: 20px/40px "楷体";
+            text-align: center;
+        }
+    }
+}
+
+
+.goodInfo {
+    border: 1px solid #d9d8d6;
+    border-top: none;
+    height: 50px;
+    li {
+        float: left;
+        width: 198px;
+        height: 50px;
+        float: left;
+        font: 24px/50px "";
+        text-align: center;
+        input {
+            width: 30px;
+            text-align: center;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+            margin-top: 5px;
+            text-align: center;
+        }
+        a{
+            display: block;
+            color:black;
+        }
+    }
+    li.num a{
+        display: inline-block;
+        width: 10px;
+        height: 20px;
+        font: 12px/20px "";
+        background: #ddd;
+        text-decoration: none;
+    }
+}
+
+.blank {
+    height: 50px;
+    font: 32px/50px "";
+    text-align: center;
+    border: 1px solid #d9d8d6;
+    border-top: none;
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

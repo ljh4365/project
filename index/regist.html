@@ -3,11 +3,111 @@
 	<head>
 		<meta charset="UTF-8">
 		<title></title>
-		<link rel="stylesheet" href=""/>		
+		<link rel="stylesheet" href="../dist/regist.min.css"/>		
 	</head>
 	<body>
-		<div class = "regist">
-			
+		<div class="top_nav">
+			<ul>
+				<li><a href="first.html">联想商城</a></li>
+				<li><a href="main.html">商城</a></li>
+				<li><a href="">社区</a></li>
+				<li><a href="">服务</a></li>
+				<li><a href="">资讯</a></li>
+				<li><a href="">门店</a></li>
+				<li class="show">
+					<a href="">
+						<span>手机版</span>
+						<span class="up"></span>
+					</a>
+				</li>					
+			</ul>
+			<p>#快递员就是工程师# 极速到家三小时送货上门，免费新机开荒</p>
+			<div class="code">
+				<span></span>
+				<span>联想客户端</span>
+			</div>
 		</div>
+		<span class="pic"><img src="../first_img/logo1.jpg" alt="" /></span>
+		<div class = "regist">
+			<h3>注册联想会员</h3>
+			<p class="p_1">
+				个人用户注册
+			</p>
+			<input type="text" value="输入手机号" id="number" name=""/>
+			<p class="warn1 warn"></p>
+			<input type="password" placeholder="输入密码，密码长度8-20位字符" id="pwd" name=""/>			
+			<p class="warn2 warn"></p>
+			<input type="password" placeholder="再次输入密码" name="" id="pwd1"/>
+			<p class="warn3 warn"></p>
+			<input type="submit" name="" id="btn" value="立即注册" />			
+			<p class="p_2">
+				注册账号即表示您同意并愿意遵守联想 <span>使用条款</span> 和 <span> 隐私策略 </span>	
+			</p>
+			<p class="p_3">				
+				<a href="login.html">点此登录></a>
+				<span>已有账号</span>
+			</p>			
+		</div>
+		
+		<script type="text/javascript" src="../src/js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../src/js/jquery.cookie.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				var flag = true;
+				//手机号验证
+				$("#number").blur(function(){
+//					alert(1);
+					var val = $(this).val();
+					var num = /^[1][0-9]{10}$/;
+					if(val.length != 11){
+						$(".warn1").html("手机号码应该为11位").css({"display":"block","color":"red"});			
+						flag = false;
+					}else if(!num.test(val)){
+						$(".warn1").html("请输入正确的手机号").css({"display":"block","color":"red"});			
+						flag = false;
+					}else{
+						$(".warn1").html("手机号格式正确").css({"display":"block","color":"block"});			
+					}
+				})
+				
+				//密码验证
+				$("#pwd").blur(function(){
+					var val = $(this).val();
+					var pwd = /^[0-9A-Za-z]{8,20}$/;
+					if(val.length<8 || val.length>20){
+						$(".warn2").html("密码应为8-20位").css({"display":"block","color":"red"});			
+						flag = false;
+					}else if(!pwd.test(val)){
+						$(".warn2").html("密码应为字符").css({"display":"block","color":"red"});			
+						flag = false;
+					}else{
+						$(".warn2").html("密码格式正确").css({"display":"block","color":"block"});			
+					}
+				})
+				
+				//再次判断密码
+				$("#pwd1").blur(function(){
+					var val = $(this).val();
+					var val_1 = $("#pwd").val();
+					if(val_1.length<8 || val_1.length>20){
+						$(".warn3").html("密码错误").css({"display":"block","color":"red"});			
+						flag = false;
+					}else if(val !== val_1){
+						$(".warn3").html("两次输入的密码不同，请再次输入").css({"display":"block","color":"red"});			
+						flag = false;
+					}else{
+						$(".warn3").html("密码正确").css({"display":"block","color":"block"});			
+					}					
+				})
+				
+				$("#btn").click(function(){
+					if(flag == true){
+						$.cookie("name",$("#number").val(),{expires:7,path:"/"});
+						$.cookie("password",$("#pwd").val(),{expires:7,path:"/"});
+						window.location = "login.html";
+					}
+				})
+			})
+		</script>
 	</body>
 </html>

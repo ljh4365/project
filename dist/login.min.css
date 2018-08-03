@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  width: 1349px;
+  height: 624px;
+  background: url(../first_img/banner1.jpg) no-repeat -300px 0; }
+
+.top_nav {
+  padding-left: 70px;
+  width: 1279px;
+  height: 34px;
+  background: #444; }
+  .top_nav ul {
+    float: left; }
+    .top_nav ul li {
+      float: left; }
+      .top_nav ul li a {
+        display: block;
+        padding: 0 12px;
+        color: #cacaca;
+        font-size: 12px;
+        line-height: 34px; }
+      .top_nav ul li a:hover {
+        color: white; }
+    .top_nav ul li:nth-child(7) a span {
+      float: left; }
+    .top_nav ul li:nth-child(7) a span:nth-child(2) {
+      float: right;
+      margin-top: 10px;
+      margin-left: 5px;
+      display: block;
+      width: 14px;
+      height: 14px;
+      background: url(../main_img/icons.png) no-repeat -210px -24px; }
+  .top_nav p {
+    float: left;
+    margin-left: 100px;
+    padding-left: 20px;
+    color: #cacaca;
+    font-size: 12px;
+    line-height: 34px;
+    background: url(../main_img/horn.png) no-repeat left 10px; }
+  .top_nav .code {
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    left: 380px;
+    top: 34px;
+    padding: 15px 20px 0;
+    text-align: center;
+    background: white;
+    z-index: 2;
+    display: none; }
+    .top_nav .code span:nth-child(1) {
+      display: block;
+      width: 80px;
+      height: 80px;
+      background: white;
+      background: url(../main_img/icons.png) -1px -70px; }
+    .top_nav .code span:nth-child(2) {
+      display: block;
+      color: #898989;
+      line-height: 20px; }
+
+.pic {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.login {
+  width: 412px;
+  height: 526px;
+  float: right;
+  background: white;
+  margin: 20px 50px 0 0; }
+  .login h3 {
+    font-size: 30px;
+    height: 100px;
+    line-height: 140px;
+    text-align: center; }
+  .login input {
+    width: 340px;
+    height: 50px;
+    border: 1px solid #d6d6d6;
+    margin-bottom: 15px;
+    padding-left: 20px;
+    margin-left: 20px; }
+  .login p:nth-child(4) {
+    width: 360px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 15px; }
+    .login p:nth-child(4) input {
+      display: block;
+      width: 16px;
+      height: 16px;
+      padding-left: 0;
+      float: left; }
+    .login p:nth-child(4) span {
+      float: left; }
+  .login input:nth-child(6) {
+    width: 360px;
+    background: #e22319;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    border: none; }
+  .login .warn {
+    width: 360px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 12px;
+    margin: -5px 0 10px 20px; }
+  .login p:nth-child(7) {
+    width: 360px;
+    margin-left: 15px; }
+    .login p:nth-child(7) a {
+      display: block;
+      float: right;
+      font-size: 14px;
+      padding: 0 5px;
+      color: #757575; }
+  .login fieldset {
+    width: 360px;
+    margin: 80px auto 10px;
+    border: none;
+    border-top: 1px solid #9C9C9C; }
+    .login fieldset legend {
+      text-align: center; }
+  .login p:nth-child(9) {
+    width: 360px;
+    padding-left: 35px; }
+    .login p:nth-child(9) img {
+      display: block;
+      float: left;
+      margin-left: 35px;
+      width: 35px;
+      height: 35px; }
